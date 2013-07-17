@@ -21,9 +21,9 @@ You also need to have Twisted installed, as the server uses twisted.web
 Running
 -------
 
-In one shell: make run-server
-In another one: make client-init
-Then, make client-read
+1. make run-server
+2. make client-init
+3. make client-read
 
 Incompleteness
 --------------
