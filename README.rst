@@ -13,8 +13,8 @@ Building
 2. (cd python-scrypt-0.1 && python setup.py build)
 3. edit Makefile to reflect the actual build/ directory under
    python-scrypt-0.1 . This will include the name of your platform and
-   version of python, so the default will probably only work on my Snow
-   Leopard box.
+   version of python, so the default will probably only work on my Mac
+   OS X 10.8 box
 
 You also need to have Twisted installed, as the server uses twisted.web
 
@@ -22,8 +22,8 @@ Running
 -------
 
 In one shell: make run-server
-In another one: ./client.py EMAIL PASSWORD init
-Then, ./client.py EMAIL PASSWORD read
+In another one: make client-init
+Then, make client-read
 
 Incompleteness
 --------------

@@ -1,7 +1,8 @@
 
-export PYTHONPATH=.:ska:srp-1.0:python-scrypt-0.1/build/lib.macosx-10.6-universal-2.6
+export PYTHONPATH=.:ska:srp-1.0:python-scrypt-0.1/build/lib.macosx-10.8-intel-2.7
 
 start:
+	mkdir -p logs
 	twistd --pidfile logs/server.pid --logfile logs/server.log -y server.py
 	twistd --pidfile logs/scrypt-server.pid --logfile logs/scrypt-server.log -y scrypt-server.py
 
